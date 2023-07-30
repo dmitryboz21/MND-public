@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project title</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <meta name="format-detection" content="telephone=no">
+    <link href="styles/main.css" rel="stylesheet">
+    <script>
+      // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+      let vh = window.innerHeight * 0.01;
+      // Then we set the value in the --vh custom property to the root of the document
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+      // We listen to the resize event
+      window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+      });
+      
+      
+    </script>
+  </head>
+  <body>
+    <header class="site-header"> 
+      <div class="site-header-top">
+        <div class="container header-top-container"><a class="sh-logo" href=""> <img class="sh-logo__desktop" src="img/svg/logo.svg" alt=""><img class="sh-logo__mob" src="img/svg/mob-logo.svg" alt=""></a>
+          <div class="sh-info"> 
+            <p>г. Ростов-на-Дону, пр. Королёва 7/19, 5 этаж, офис 602</p>
+            <p>Время работы с 09:00 до 18:00</p>
+            <p>Выходные: суббота, воскресенье</p>
+          </div>
+          <div class="sh-before-phone"></div><a class="sh-phone" href=""> 
+            <div class="sh-phone-icon"><img src="img/svg/phone.svg" alt=""></div>
+            <div class="sh-phone-tel">+7 (908)-500-96-97</div></a>
+          <div class="sh-burger js-sh-burger"><span></span></div>
+        </div>
+      </div>
+      <div class="site-header-bottom">
+        <div class="container header-bottom-container">
+          <nav class="sh-menu">
+            <div class="sh-menu-top">
+              <div class="sh-menu-top__left">
+                <ul class="sh-menu-l1 js-calc-first-and-last-in-flex-row">
+                  <li class="js-sh-menu-l1__item sh-menu-l1__item sh-menu-l1__item--active" data-target="sh-menu-l2-1"> <a href="">Подать заявление на обслуживание</a></li>
+                  <li class="js-sh-menu-l1__item sh-menu-l1__item"><a href="">Как помочь</a></li>
+                  <li class="js-sh-menu-l1__item sh-menu-l1__item" data-target="sh-menu-l2-3"> <a href="">Обратная связь</a></li>
+                  <li class="js-sh-menu-l1__item sh-menu-l1__item"> <a href="">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="sh-menu-top__right">
+                <form class="sh-search" action=""> 
+                  <button class="sh-search__btn" type="submit"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.184 22.6575L24.1839 22.6574L18.406 16.884C19.7994 15.1563 20.6384 12.9621 20.6384 10.5692C20.6384 5.01383 16.1196 0.5 10.5692 0.5C5.01886 0.5 0.5 5.01383 0.5 10.5692C0.5 16.1246 5.01886 20.6384 10.5692 20.6384C12.9577 20.6384 15.1558 19.7994 16.8841 18.4059L22.6575 24.1793C22.8675 24.3893 23.1421 24.4953 23.4208 24.4953C23.6994 24.4953 23.974 24.3893 24.184 24.1793C24.6053 23.758 24.6053 23.0788 24.184 22.6575ZM18.4846 10.5692C18.4846 14.9317 14.9317 18.4846 10.5692 18.4846C6.20673 18.4846 2.65377 14.9317 2.65377 10.5692C2.65377 6.20673 6.20673 2.65377 10.5692 2.65377C14.9319 2.65377 18.4846 6.2022 18.4846 10.5692Z" fill="#07A2F0" stroke="#07A2F0"/></svg></button>
+                  <input class="sh-search-inp" type="text" name="s" placeholder="Поиск">
+                </form>
+              </div>
+            </div>
+            <div class="sh-menu-l2-menus">
+              <ul class="sh-menu-l2 sh-menu-l2--shown" id="sh-menu-l2-1">
+                <li class="sh-menu-l2__item"> <a href="">Новости</a></li>
+                <li class="sh-menu-l2__item"> <a href="">Социальные проекты</a></li>
+                <li class="sh-menu-l2__item"> <a href="">Благодарность наших благополучателей</a></li>
+                <li class="sh-menu-l2__item"> <a href="">Часто задаваемые вопросы</a></li>
+                <li class="sh-menu-l2__item"> <a href="">Прочее</a></li>
+              </ul>
+              <ul class="sh-menu-l2" id="sh-menu-l2-3" style="display:none;">
+                <li class="sh-menu-l2__item"> <a href="">Благодарность наших благополучателей </a></li>
+                <li class="sh-menu-l2__item"> <a href="">Новости </a></li>
+                <li class="sh-menu-l2__item"> <a href="">Социальные проекты </a></li>
+                <li class="sh-menu-l2__item"> <a href="">Прочее </a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="sh-mob-menu">
+        <div class="sh-mob-menu-top"> 
+          <form class="sh-search sh-search--mob" action=""> 
+            <button class="sh-search__btn" type="submit"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.184 22.6575L24.1839 22.6574L18.406 16.884C19.7994 15.1563 20.6384 12.9621 20.6384 10.5692C20.6384 5.01383 16.1196 0.5 10.5692 0.5C5.01886 0.5 0.5 5.01383 0.5 10.5692C0.5 16.1246 5.01886 20.6384 10.5692 20.6384C12.9577 20.6384 15.1558 19.7994 16.8841 18.4059L22.6575 24.1793C22.8675 24.3893 23.1421 24.4953 23.4208 24.4953C23.6994 24.4953 23.974 24.3893 24.184 24.1793C24.6053 23.758 24.6053 23.0788 24.184 22.6575ZM18.4846 10.5692C18.4846 14.9317 14.9317 18.4846 10.5692 18.4846C6.20673 18.4846 2.65377 14.9317 2.65377 10.5692C2.65377 6.20673 6.20673 2.65377 10.5692 2.65377C14.9319 2.65377 18.4846 6.2022 18.4846 10.5692Z" fill="#07A2F0" stroke="#07A2F0"/></svg></button>
+            <input class="sh-search-inp" type="text" name="s" placeholder="Поиск">
+          </form>
+        </div>
+        <div class="sh-mob-menu-main">
+          <ul class="sh-mobmenu-l1">
+            <li class="js-sh-mobmenu-l1__item sh-mobmenu-l1__item"><a href="">Подать заявление на обслуживание</a></li>
+            <li class="js-sh-mobmenu-l1__item sh-mobmenu-l1__item"><a href="">Как помочь</a></li>
+            <li class="js-sh-mobmenu-l1__item sh-mobmenu-l1__item" data-target="sh-menu-l2-3"> <a href="">Обратная связь</a></li>
+            <li class="js-sh-mobmenu-l1__item sh-mobmenu-l1__item"> <a href="">Контакты</a></li>
+            <li class="js-sh-mobmenu-l1__item sh-mobmenu-l1__item"> <a href="">Новости</a></li>
+            <li class="js-sh-mobmenu-l1__item js-sh-mobmenu-l1__item--has-sub sh-mobmenu-l1__item sh-mobmenu-l1__item--has-sub"><a href="">Социальные проекты</a>
+              <div class="sh-mobmenu-l2" style="display:none;">
+                <ul class="sh-mobmenu-l2__inner">
+                  <li class="sh-mobmenu-l2__item"> <a href="">Социальные проекты</a></li>
+                  <li class="sh-mobmenu-l2__item"> <a href="">Система долговременного ухода</a></li>
+                  <li class="sh-mobmenu-l2__item"> <a href="">Оказание социальной помощи на дому</a></li>
+                  <li class="sh-mobmenu-l2__item"> <a href="">Радость в каждом движении</a></li>
+                  <li class="sh-mobmenu-l2__item"> <a href="">Фронт добра</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="js-sh-mobmenu-l1__item sh-mobmenu-l1__item"> <a href="">Благодарность наших благополучателей</a></li>
+            <li class="js-sh-mobmenu-l1__item sh-mobmenu-l1__item"> <a href="">Часто задаваемые вопросы</a></li>
+            <li class="js-sh-mobmenu-l1__item js-sh-mobmenu-l1__item--has-sub sh-mobmenu-l1__item sh-mobmenu-l1__item--has-sub"><a href="">Прочее</a>
+              <div class="sh-mobmenu-l2" style="display:none">
+                <ul class="sh-mobmenu-l2__inner">
+                  <li class="sh-mobmenu-l2__item"> <a href="">Благодарность наших благополучателей </a></li>
+                  <li class="sh-mobmenu-l2__item"> <a href="">Новости</a></li>
+                  <li class="sh-mobmenu-l2__item"> <a href="">Социальные проекты </a></li>
+                  <li class="sh-mobmenu-l2__item"> <a href="">Прочее </a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="sh-info-mob">
+      <p>г. Ростов-на-Дону, пр. Королёва 7/19, 5 этаж, офис 602</p>
+      <p>Время работы с 09:00 до 18:00</p>
+      <p>Выходные: суббота, воскресенье</p>
+    </div>
+    <main class="site-main">
+      <section class="about-hero">
+        <div class="container container--right-endless-only-mob">
+          <div class="ah-slider slider-with-custom-dots js-ah-slider">
+            <div class="ah-slide">
+              <div class="ah-slide__img"> <img src="img/ah-slide.jpg" alt=""></div>
+            </div>
+            <div class="ah-slide">
+              <div class="ah-slide__img"> <img src="img/ah-slide.jpg" alt=""></div>
+            </div>
+            <div class="ah-slide">
+              <div class="ah-slide__img"> <img src="img/ah-slide.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mercy-about">
+        <div class="container">
+          <div class="mercy-about-inner">
+            <div class="mercy-about__content">
+              <div class="mercy-about__content-top">
+                <div class="h2">АНО СОБСПЗГ «Милосердие-на-Дону»</div>
+                <div class="mercy-text">Это социально-ориентированная организация, целью создания которой является предоставление социально-полезных услуг в сфере профилактики и охраны здоровья граждан, улучшения морально-психологического состояния граждан. Очень часто человек остается один при выходе на пенсию, нарушении здоровья, инвалидности. Забота родных очень важна, но порой ее недостаточно, а иногда человек и во все не имеет семьи. Чувство одиночества, безысходности – бич современности. Помочь справиться с данной проблемой, повысить качество жизни граждан, попавших в трудную жизненную ситуацию – главная задача нашей организации.С 2018 года наши сотрудники предоставляют пакет социально-бытовых услуг и социально-психологического патронажа на дому более 300 обратившихся граждан города Ростова-на-Дону. Вид, количество необходимых услуг, период их предоставления определяются исходя из индивидуальных потребностей наших благополучателей.</div>
+              </div>
+              <div class="mercy-about__content-bot"> 
+                <div class="mercy-about-img"> <img src="img/mercy-about-2.jpg" alt=""></div>
+                <div class="mercy-about-quote">
+                  <div class="mercy-about-quote__text">«Предоставление социальных услуг гражданам, обратившихся к нам, базируется на двух китах — доверии и ответственности: благополучатели доверяют нам, мы ответственно подходим к выполнению поставленных задач», — c уважением, директор Автономной некоммерческой организации социального обслуживания, благотворительной и социальной поддержки и защиты граждан «Милосердие-на-Дону» </div>
+                  <div class="mercy-about-quote__author">Евгений Иванович Осяк</div>
+                </div>
+              </div>
+            </div>
+            <div class="mercy-about__sidebar"><a class="mercy-about__sidebar-item" href=""> <img src="img/mercy-about.jpg" alt=""></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="front-news"> 
+        <div class="container"> 
+          <div class="h2-big h2-big--underlin">Новости</div>
+          <div class="front-news-inner">
+            <div class="front-news-inner__left"> 
+              <div class="news-cards"><a class="new-card" href="">
+                  <div class="new-card__img"> <img src="img/news.jpg" alt=""></div>
+                  <div class="new-card__text">Представляем видео о проведенной акции ко дню победы совместно с КСОРС государства Эквадор.</div>
+                  <div class="new-card__date">15 Май 2023 | 11:52</div></a><a class="new-card" href="">
+                  <div class="new-card__img"> <img src="img/news.jpg" alt=""></div>
+                  <div class="new-card__text">Представляем видео о проведенной акции ко дню победы совместно с КСОРС государства Эквадор.</div>
+                  <div class="new-card__date">15 Май 2023 | 11:52</div></a><a class="new-card" href="">
+                  <div class="new-card__img"> <img src="img/news.jpg" alt=""></div>
+                  <div class="new-card__text">9 мая 2023 года, в День Победы, было закуплено и передано со словами поздравлений 66 подарочных наборов </div>
+                  <div class="new-card__date">11 Май 2023 | 17:18</div></a><a class="new-card" href="">
+                  <div class="new-card__img"> <img src="img/news.jpg" alt=""></div>
+                  <div class="new-card__text">Коллектив АНО СОБСПЗГ «Милосердие-на-Дону» принял участие в акции «Пасхальное поздравление» военного госпиталя.</div>
+                  <div class="new-card__date">16 Апреля 2023 | 11:52</div></a></div><a class="front-news-link--mob" href="">все новости</a>
+            </div>
+            <div class="front-news-inner__right">
+              <div class="news-simple"><a class="news-simple-item" href="">
+                  <div class="news-simple-item__text">Представляем видео о проведенной акции ко дню победы совместно с КСОРС государства Эквадор.</div>
+                  <div class="news-simple-item__date">15 Май 2023 </div></a><a class="news-simple-item" href=""> 
+                  <div class="news-simple-item__text">Нашей опекаемой передали в дар стиральную машину.</div>
+                  <div class="news-simple-item__date">15 Май 2023 </div></a><a class="news-simple-item" href=""> 
+                  <div class="news-simple-item__text">Заведующий АНО СОБСПЗГ «Милосердие-на-Дону» Екатерина Еремеевская, побывала на трехдневной очной сессии на тему «Социальное проектирование и методы управления проектами».</div>
+                  <div class="news-simple-item__date">15 Май 2023 </div></a><a class="news-simple-item" href="">
+                  <div class="news-simple-item__text">21 февраля 2023 года мы передали груз на фронтовую линию</div>
+                  <div class="news-simple-item__date">15 Май 2023 </div></a><a class="news-simple-item" href="">
+                  <div class="news-simple-item__text">Мы получили благодарность от администрации МБУ ДО «Дом творчества учащихся и молодежи города Снежное»!</div>
+                  <div class="news-simple-item__date">15 Май 2023</div></a></div><a class="btn btn-front-news" href="">Все новости</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="long-slider-section js-long-slider-section">
+        <div class="container--right-endless container">
+          <div class="long-slider slider-with-custom-dots js-long-slider"><a class="long-slider-slide" href=""><img src="img/long-slider.jpg" alt=""></a><a class="long-slider-slide" href=""><img src="img/long-slider.jpg" alt=""></a><a class="long-slider-slide" href=""><img src="img/long-slider.jpg" alt=""></a><a class="long-slider-slide" href=""><img src="img/long-slider.jpg" alt=""></a><a class="long-slider-slide" href=""><img src="img/long-slider.jpg" alt=""></a><a class="long-slider-slide" href=""><img src="img/long-slider.jpg" alt=""></a></div>
+        </div>
+        <div class="long-slider-arrows-wrap">
+          <div class="container long-slider-arrows"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer-inner">
+          <div class="site-footer__item site-footer__item--1"><a class="footer-logo" href="/"><img src="img/svg/sf-logo.svg" alt=""></a>
+            <div class="sf-contacts"> <a class="sf-contacts-item" href=""> Контакты</a><a class="sf-contacts-item" href="tel:+79085009697">+7 (908) 500-96-97</a><a class="sf-contacts-item" href="mailto:anomiloserdie@bk.ru">anomiloserdie@bk.ru</a></div>
+          </div>
+          <div class="site-footer__item site-footer__item--2"><a class="footer-icon" href=""><img src="img/svg/logo-grant.svg" alt=""></a>
+            <div class="footer-info">Мы успешно реализовали проекты при поддержке фонда президентских грантов: "Социально-ориентированный телевизионный проект Отверженные" и "Служба паллиативной помощи и патронажного ухода"</div>
+          </div>
+          <div class="site-footer__item site-footer__item--3">
+            <div class="footer-socials"><a class="footer-social" href=""> <img src="img/svg/vk.svg" alt=""></a><a class="footer-social" href=""> <img src="img/svg/vk.svg" alt=""></a><a class="footer-social" href=""> <img src="img/svg/vk.svg" alt=""></a></div><a class="site-footer__item-link site-footer__item-link--mt12" href="">Подать заявление на обслуживание</a><a class="site-footer__item-link" href="">Часто задаваемые вопросы</a><a class="site-footer__item-link" href="">Обратная связь</a><a class="site-footer__item-link" href="">Как помочь</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
