@@ -1,0 +1,75 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Project title"
+
+block content
+	.container.container--breadcrumbs
+		ul.breadcrumbs
+			li.breadcrumbs__item 
+				a.breadcrumbs__link(href="")  Главная
+			.breadcrumbs__delimiter
+			.breadcrumbs__item
+				.breadcrumbs__link  Новости
+	section.news-all
+		.container
+			.h2 Новости
+			.news-all-content
+				a(href="").new-card.new-card--new-all
+					.new-card__img 
+						img(src="img/news.jpg", alt="")
+					.new-card__text Представляем видео о проведенной акции ко дню победы совместно с КСОРС государства Эквадор.
+					.new-card__date 15 Май 2023 | 11:52
+				a(href="").new-card.new-card--new-all
+					.new-card__img 
+						img(src="img/news.jpg", alt="")
+					.new-card__text Представляем видео о проведенной акции ко дню победы совместно с КСОРС государства Эквадор.
+					.new-card__date 15 Май 2023 | 11:52
+				a(href="").new-card.new-card--new-all
+					.new-card__img 
+						img(src="img/news.jpg", alt="")
+					.new-card__text 9 мая 2023 года, в День Победы, было закуплено и передано со словами поздравлений 66 подарочных наборов 
+					.new-card__date 11 Май 2023 | 17:18
+				a(href="").new-card.new-card--new-all
+					.new-card__img 
+						img(src="img/news.jpg", alt="")
+					.new-card__text Коллектив АНО СОБСПЗГ «Милосердие-на-Дону» принял участие в акции «Пасхальное поздравление» военного госпиталя.
+					.new-card__date 16 Апреля 2023 | 11:52
+				a(href="").new-card.new-card--new-all
+					.new-card__img 
+						img(src="img/news.jpg", alt="")
+					.new-card__text Представляем видео о проведенной акции ко дню победы совместно с КСОРС государства Эквадор.
+					.new-card__date 15 Май 2023 | 11:52
+				a(href="").new-card.new-card--new-all
+					.new-card__img 
+						img(src="img/news.jpg", alt="")
+					.new-card__text Представляем видео о проведенной акции ко дню победы совместно с КСОРС государства Эквадор.
+					.new-card__date 15 Май 2023 | 11:52
+				a(href="").new-card.new-card--new-all
+					.new-card__img 
+						img(src="img/news.jpg", alt="")
+					.new-card__text 9 мая 2023 года, в День Победы, было закуплено и передано со словами поздравлений 66 подарочных наборов 
+					.new-card__date 11 Май 2023 | 17:18
+				a(href="").new-card.new-card--new-all
+					.new-card__img 
+						img(src="img/news.jpg", alt="")
+					.new-card__text Коллектив АНО СОБСПЗГ «Милосердие-на-Дону» принял участие в акции «Пасхальное поздравление» военного госпиталя.
+					.new-card__date 16 Апреля 2023 | 11:52
+				a(href="").new-card.new-card--new-all
+					.new-card__img 
+						img(src="img/news.jpg", alt="")
+					.new-card__text Коллектив АНО СОБСПЗГ «Милосердие-на-Дону» принял участие в акции «Пасхальное поздравление» военного госпиталя.
+					.new-card__date 16 Апреля 2023 | 11:52
+			.pagination-news-table
+				.pagination-left
+					a.pagination-left__item.pagination-left__item--active 1
+					a.pagination-left__item 2
+					a.pagination-left__item 3
+					a.pagination-left__item ...
+					a.pagination-left__item 25
+				.pagination-right
+					a.pagination-right__item
+						img(src="img/svg/pag-icon.svg", alt="")
+			
+

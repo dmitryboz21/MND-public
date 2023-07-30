@@ -1,0 +1,163 @@
+.simple-text {
+	color: #000;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+
+	&--lh140 {
+		p {
+			line-height: 120%;
+		}
+	}
+
+	p {}
+
+	&>*+* {
+		margin-top: 19px;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	ol {}
+
+	ul {}
+
+	a {
+		text-decoration: underline;
+		color: #006CAA;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+	}
+}
+
+.news-detail-inner {
+	padding-left: 101px;
+	padding-right: 101px;
+	margin-top: 25px;
+}
+
+.news-detail-text-big {
+	color: var(--blue-secondary, #006CAA);
+	text-align: center;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 40px;
+}
+
+.news-detail-date {
+	margin-top: 65px;
+	display: flex;
+	align-items: center;
+
+	&__icon {
+		display: block;
+		width: 20px;
+		height: 20px;
+		margin-right: 9px;
+		background: url(../img/svg/news-detail-icon.svg) no-repeat center center;
+	}
+
+	&__date {
+		color: var(--grey, #7C7C7D);
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+}
+
+.news-detail-top-pic {
+	margin-top: 18px;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.news-detail-text {
+	margin-top: 32px;
+}
+
+.gallery {
+	margin-top: 59px;
+	padding-bottom: 60px;
+	position: relative;
+}
+
+.title-gallery {
+	color: var(--blue-main, #07A2F0);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+	display: block;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		background: rgba(7, 162, 240, 1);
+		left: 0;
+		bottom: -18px;
+		width: 72px;
+		height: 2px;
+	}
+}
+
+.gallery-slider {
+	margin-top: 36px;
+	position: relative;
+
+	&::before {
+		content: "";
+		z-index: 3;
+		position: absolute;
+		background: linear-gradient(276deg, rgba(200, 237, 255, 0.80) 34.90%, rgba(216, 240, 252, 0.00) 100%);
+		display: block;
+		right: 0;
+		top: 0;
+		width: 25%;
+		height: 100%;
+	}
+
+	.ah-arrow--prev {
+		display: none !important;
+		pointer-events: none;
+	}
+
+	.ah-arrow--next {}
+}
+
+.gallery-slider-slide {
+	margin-left: 20px;
+	position: relative;
+	width: 380px;
+	max-width: 100%;
+	display: block;
+
+	&::before {
+		content: "";
+		display: block;
+		padding-top: 75%;
+	}
+
+	img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center center;
+	}
+}

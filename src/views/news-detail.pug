@@ -1,0 +1,50 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Project title"
+
+block content
+	.container.container--breadcrumbs
+		ul.breadcrumbs
+			li.breadcrumbs__item 
+				a.breadcrumbs__link(href="")  Главная
+			.breadcrumbs__delimiter
+			li.breadcrumbs__item 
+				a.breadcrumbs__link(href="")  Новости
+			.breadcrumbs__delimiter
+			.breadcrumbs__item
+				.breadcrumbs__link  Уважаемые коллеги, любимые сотрудники АНО СОБСПЗГ «Милосердие-на-Дону» поздравляем Вас с профессиональным праздником — Днем социального работника!
+	section.news-detail
+		.container 
+			.news-detail-inner
+				.news-detail-text-big Уважаемые коллеги, любимые сотрудники АНО СОБСПЗГ «Милосердие-на-Дону» поздравляем Вас с профессиональным праздником — Днем социального работника!
+				.news-detail-date
+					.news-detail-date__icon 
+					.news-detail-date__date 15 Май 2023 
+
+				.news-detail-top-pic
+					img(src="img/news-detail.jpg", alt="")
+
+				.news-detail-text.simple-text.simple-text--lh140
+					p Благодарность наших опекаемых за Ваше ревностное служение, опыт и профессионализм, за то, что Вы всегда рядом — безгранична. Благодарим Вас за то, что продолжаете с честью выполнять свой профессиональный долг!Примите искренние поздравления и самые теплые пожелания в этот день. Желаем Вам крепкого здоровья, счастья, терпения и уважения окружающих, благополучия, любви и мира Вам и Вашим родным.
+	section.gallery 
+		.container
+			.title-gallery Галерея изображений
+			.gallery-slider.slider-with-custom-dots.js-gallery-slider
+				a(href="").gallery-slider-slide
+					img(src="img/gallery-slider.jpg", alt="")
+				a(href="").gallery-slider-slide
+					img(src="img/gallery-slider.jpg", alt="")
+				a(href="").gallery-slider-slide
+					img(src="img/gallery-slider.jpg", alt="")
+				a(href="").gallery-slider-slide
+					img(src="img/gallery-slider.jpg", alt="")
+				a(href="").gallery-slider-slide
+					img(src="img/gallery-slider.jpg", alt="")
+				a(href="").gallery-slider-slide
+					img(src="img/gallery-slider.jpg", alt="")
+
+
+
+

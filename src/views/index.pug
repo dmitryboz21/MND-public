@@ -1,0 +1,102 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Project title"
+
+block content
+	section.about-hero
+		.container.container--right-endless-only-mob
+			.ah-slider.slider-with-custom-dots.js-ah-slider
+				.ah-slide
+					.ah-slide__img 
+						img(src="img/ah-slide.jpg", alt="")
+				.ah-slide
+					.ah-slide__img 
+						img(src="img/ah-slide.jpg", alt="")
+				.ah-slide
+					.ah-slide__img 
+						img(src="img/ah-slide.jpg", alt="")
+	section.mercy-about
+		.container
+			.mercy-about-inner
+				.mercy-about__content
+					.mercy-about__content-top
+						.h2 АНО СОБСПЗГ «Милосердие-на-Дону»
+						.mercy-text Это социально-ориентированная организация, целью создания которой является предоставление социально-полезных услуг в сфере профилактики и охраны здоровья граждан, улучшения морально-психологического состояния граждан. Очень часто человек остается один при выходе на пенсию, нарушении здоровья, инвалидности. Забота родных очень важна, но порой ее недостаточно, а иногда человек и во все не имеет семьи. Чувство одиночества, безысходности – бич современности. Помочь справиться с данной проблемой, повысить качество жизни граждан, попавших в трудную жизненную ситуацию – главная задача нашей организации.С 2018 года наши сотрудники предоставляют пакет социально-бытовых услуг и социально-психологического патронажа на дому более 300 обратившихся граждан города Ростова-на-Дону. Вид, количество необходимых услуг, период их предоставления определяются исходя из индивидуальных потребностей наших благополучателей.
+					.mercy-about__content-bot 
+						.mercy-about-img 
+							img(src="img/mercy-about-2.jpg", alt="")
+						.mercy-about-quote
+							.mercy-about-quote__text «Предоставление социальных услуг гражданам, обратившихся к нам, базируется на двух китах — доверии и ответственности: благополучатели доверяют нам, мы ответственно подходим к выполнению поставленных задач», — c уважением, директор Автономной некоммерческой организации социального обслуживания, благотворительной и социальной поддержки и защиты граждан «Милосердие-на-Дону» 
+							.mercy-about-quote__author Евгений Иванович Осяк
+				.mercy-about__sidebar
+					a(href="").mercy-about__sidebar-item 
+						img(src="img/mercy-about.jpg", alt="")
+	section.front-news 
+		.container 
+			.h2-big.h2-big--underlin Новости
+			.front-news-inner
+				.front-news-inner__left 
+					.news-cards
+						a(href="").new-card
+							.new-card__img 
+								img(src="img/news.jpg", alt="")
+							.new-card__text Представляем видео о проведенной акции ко дню победы совместно с КСОРС государства Эквадор.
+							.new-card__date 15 Май 2023 | 11:52
+						a(href="").new-card
+							.new-card__img 
+								img(src="img/news.jpg", alt="")
+							.new-card__text Представляем видео о проведенной акции ко дню победы совместно с КСОРС государства Эквадор.
+							.new-card__date 15 Май 2023 | 11:52
+						a(href="").new-card
+							.new-card__img 
+								img(src="img/news.jpg", alt="")
+							.new-card__text 9 мая 2023 года, в День Победы, было закуплено и передано со словами поздравлений 66 подарочных наборов 
+							.new-card__date 11 Май 2023 | 17:18
+						a(href="").new-card
+							.new-card__img 
+								img(src="img/news.jpg", alt="")
+							.new-card__text Коллектив АНО СОБСПЗГ «Милосердие-на-Дону» принял участие в акции «Пасхальное поздравление» военного госпиталя.
+							.new-card__date 16 Апреля 2023 | 11:52
+					a(href="").front-news-link--mob все новости
+
+
+				.front-news-inner__right
+					.news-simple
+						a(href="").news-simple-item
+							.news-simple-item__text Представляем видео о проведенной акции ко дню победы совместно с КСОРС государства Эквадор.
+							.news-simple-item__date 15 Май 2023 
+						a(href="").news-simple-item 
+							.news-simple-item__text Нашей опекаемой передали в дар стиральную машину.
+							.news-simple-item__date 15 Май 2023 
+						a(href="").news-simple-item 
+							.news-simple-item__text Заведующий АНО СОБСПЗГ «Милосердие-на-Дону» Екатерина Еремеевская, побывала на трехдневной очной сессии на тему «Социальное проектирование и методы управления проектами».
+							.news-simple-item__date 15 Май 2023 
+						a(href="").news-simple-item
+							.news-simple-item__text 21 февраля 2023 года мы передали груз на фронтовую линию
+							.news-simple-item__date 15 Май 2023 
+						a(href="").news-simple-item
+							.news-simple-item__text Мы получили благодарность от администрации МБУ ДО «Дом творчества учащихся и молодежи города Снежное»!
+							.news-simple-item__date 15 Май 2023
+					a(href="").btn.btn-front-news Все новости
+
+	section.long-slider-section.js-long-slider-section
+		.container--right-endless.container
+			.long-slider.slider-with-custom-dots.js-long-slider
+				a(href="").long-slider-slide
+					img(src="img/long-slider.jpg", alt="")
+				a(href="").long-slider-slide
+					img(src="img/long-slider.jpg", alt="")
+				a(href="").long-slider-slide
+					img(src="img/long-slider.jpg", alt="")
+				a(href="").long-slider-slide
+					img(src="img/long-slider.jpg", alt="")
+				a(href="").long-slider-slide
+					img(src="img/long-slider.jpg", alt="")
+				a(href="").long-slider-slide
+					img(src="img/long-slider.jpg", alt="")
+		.long-slider-arrows-wrap
+			.container.long-slider-arrows
+				
+				

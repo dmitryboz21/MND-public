@@ -1,0 +1,140 @@
+header.site-header 
+	.site-header-top
+		.container.header-top-container
+			a.sh-logo(href="")  
+				img.sh-logo__desktop(src="img/svg/logo.svg", alt="")
+				img.sh-logo__mob(src="img/svg/mob-logo.svg", alt="")
+
+			.sh-info 
+				p г. Ростов-на-Дону, пр. Королёва 7/19, 5 этаж, офис 602
+				p Время работы с 09:00 до 18:00
+				p Выходные: суббота, воскресенье
+			.sh-before-phone
+			a.sh-phone(href="") 
+				.sh-phone-icon
+					img(src="img/svg/phone.svg", alt="")
+				.sh-phone-tel +7 (908)-500-96-97
+				
+			.sh-burger.js-sh-burger
+				span
+
+	.site-header-bottom
+		.container.header-bottom-container
+			nav.sh-menu
+				.sh-menu-top
+					.sh-menu-top__left
+						ul.sh-menu-l1.js-calc-first-and-last-in-flex-row
+							li.js-sh-menu-l1__item.sh-menu-l1__item.sh-menu-l1__item--active(data-target="sh-menu-l2-1") 
+								a(href="") Подать заявление на обслуживание
+								
+							li.js-sh-menu-l1__item.sh-menu-l1__item
+								a(href="") Как помочь
+
+							li.js-sh-menu-l1__item.sh-menu-l1__item(data-target="sh-menu-l2-3") 
+								a(href="") Обратная связь
+
+							li.js-sh-menu-l1__item.sh-menu-l1__item 
+								a(href="") Контакты
+
+
+					.sh-menu-top__right
+						form.sh-search(action="") 
+							button.sh-search__btn(type="submit") <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.184 22.6575L24.1839 22.6574L18.406 16.884C19.7994 15.1563 20.6384 12.9621 20.6384 10.5692C20.6384 5.01383 16.1196 0.5 10.5692 0.5C5.01886 0.5 0.5 5.01383 0.5 10.5692C0.5 16.1246 5.01886 20.6384 10.5692 20.6384C12.9577 20.6384 15.1558 19.7994 16.8841 18.4059L22.6575 24.1793C22.8675 24.3893 23.1421 24.4953 23.4208 24.4953C23.6994 24.4953 23.974 24.3893 24.184 24.1793C24.6053 23.758 24.6053 23.0788 24.184 22.6575ZM18.4846 10.5692C18.4846 14.9317 14.9317 18.4846 10.5692 18.4846C6.20673 18.4846 2.65377 14.9317 2.65377 10.5692C2.65377 6.20673 6.20673 2.65377 10.5692 2.65377C14.9319 2.65377 18.4846 6.2022 18.4846 10.5692Z" fill="#07A2F0" stroke="#07A2F0"/></svg>
+
+							input.sh-search-inp(type="text", name="s", placeholder="Поиск")
+
+				.sh-menu-l2-menus
+					ul#sh-menu-l2-1.sh-menu-l2.sh-menu-l2--shown
+						li.sh-menu-l2__item 
+							a(href="") Новости
+						li.sh-menu-l2__item 
+							a(href="") Социальные проекты
+						li.sh-menu-l2__item 
+							a(href="") Благодарность наших благополучателей
+						li.sh-menu-l2__item 
+							a(href="") Часто задаваемые вопросы
+						li.sh-menu-l2__item 
+							a(href="") Прочее
+
+
+					ul#sh-menu-l2-3.sh-menu-l2(style="display:none;")
+						li.sh-menu-l2__item 
+							a(href="") Благодарность наших благополучателей 
+						li.sh-menu-l2__item 
+							a(href="") Новости 
+						li.sh-menu-l2__item 
+							a(href="") Социальные проекты 
+						li.sh-menu-l2__item 
+							a(href="") Прочее 
+
+	.sh-mob-menu
+		.sh-mob-menu-top 
+			form.sh-search.sh-search--mob(action="") 
+				button.sh-search__btn(type="submit") <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.184 22.6575L24.1839 22.6574L18.406 16.884C19.7994 15.1563 20.6384 12.9621 20.6384 10.5692C20.6384 5.01383 16.1196 0.5 10.5692 0.5C5.01886 0.5 0.5 5.01383 0.5 10.5692C0.5 16.1246 5.01886 20.6384 10.5692 20.6384C12.9577 20.6384 15.1558 19.7994 16.8841 18.4059L22.6575 24.1793C22.8675 24.3893 23.1421 24.4953 23.4208 24.4953C23.6994 24.4953 23.974 24.3893 24.184 24.1793C24.6053 23.758 24.6053 23.0788 24.184 22.6575ZM18.4846 10.5692C18.4846 14.9317 14.9317 18.4846 10.5692 18.4846C6.20673 18.4846 2.65377 14.9317 2.65377 10.5692C2.65377 6.20673 6.20673 2.65377 10.5692 2.65377C14.9319 2.65377 18.4846 6.2022 18.4846 10.5692Z" fill="#07A2F0" stroke="#07A2F0"/></svg>
+
+				input.sh-search-inp(type="text", name="s", placeholder="Поиск")
+
+		.sh-mob-menu-main
+			ul.sh-mobmenu-l1
+				li.js-sh-mobmenu-l1__item.sh-mobmenu-l1__item
+					a(href="") Подать заявление на обслуживание
+
+
+				li.js-sh-mobmenu-l1__item.sh-mobmenu-l1__item
+					a(href="") Как помочь
+
+				li.js-sh-mobmenu-l1__item.sh-mobmenu-l1__item(data-target="sh-menu-l2-3") 
+					a(href="") Обратная связь
+
+				li.js-sh-mobmenu-l1__item.sh-mobmenu-l1__item 
+					a(href="") Контакты
+
+				li.js-sh-mobmenu-l1__item.sh-mobmenu-l1__item 
+					a(href="") Новости
+
+				li.js-sh-mobmenu-l1__item.js-sh-mobmenu-l1__item--has-sub.sh-mobmenu-l1__item.sh-mobmenu-l1__item--has-sub
+					a(href="") Социальные проекты
+					.sh-mobmenu-l2(style="display:none;")
+						ul.sh-mobmenu-l2__inner
+							li.sh-mobmenu-l2__item 
+								a(href="") Социальные проекты
+							li.sh-mobmenu-l2__item 
+								a(href="") Система долговременного ухода
+							li.sh-mobmenu-l2__item 
+								a(href="") Оказание социальной помощи на дому
+							li.sh-mobmenu-l2__item 
+								a(href="") Радость в каждом движении
+							li.sh-mobmenu-l2__item 
+								a(href="") Фронт добра
+
+				li.js-sh-mobmenu-l1__item.sh-mobmenu-l1__item 
+					a(href="") Благодарность наших благополучателей
+
+
+				li.js-sh-mobmenu-l1__item.sh-mobmenu-l1__item 
+					a(href="") Часто задаваемые вопросы
+
+				li.js-sh-mobmenu-l1__item.js-sh-mobmenu-l1__item--has-sub.sh-mobmenu-l1__item.sh-mobmenu-l1__item--has-sub
+					a(href="") Прочее
+
+					.sh-mobmenu-l2(style="display:none")
+						ul.sh-mobmenu-l2__inner
+							li.sh-mobmenu-l2__item 
+								a(href="") Благодарность наших благополучателей 
+							li.sh-mobmenu-l2__item 
+								a(href="") Новости
+							li.sh-mobmenu-l2__item 
+								a(href="") Социальные проекты 
+							li.sh-mobmenu-l2__item 
+								a(href="") Прочее 
+
+
+
+
+
+
+
+.sh-info-mob
+	p г. Ростов-на-Дону, пр. Королёва 7/19, 5 этаж, офис 602
+	p Время работы с 09:00 до 18:00
+	p Выходные: суббота, воскресенье

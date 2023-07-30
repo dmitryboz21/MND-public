@@ -1,0 +1,170 @@
+.site-footer {
+	background: var(--blue-secondary, #006CAA);
+	a{
+		@include hov();
+	}
+}
+
+.site-footer-inner {
+	padding-top: 55px;
+	padding-bottom: 34px;
+	display: flex;
+	justify-content: space-between;
+	color: rgba(255, 255, 255, 1);
+
+	@media screen and (max-width: 1045px) {
+		margin-left: -20px;
+		flex-wrap: wrap;
+	}
+
+	@media screen and (max-width: 620px) {
+		margin-left: 0;
+		padding-top: 32px;
+
+	}
+}
+
+.footer-logo {
+	display: block;
+	width: 180px;max-width: 100%;
+	@media screen and (max-width: 620px) {
+		width: 332px;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+.sf-contacts {
+	margin-top: 24px;
+
+
+}
+
+.sf-contacts-item {
+	display: block;
+	font-size: 20px;
+	font-style: normal;
+	line-height: 24px;
+	font-weight: 500;
+	font-family: Roboto;
+
+	&:first-child {
+		font-family: $interFont;
+		line-height: normal;
+		font-weight: 600;
+
+		@media screen and (max-width: 620px) {}
+	}
+
+	&:not(:first-child) {
+		margin-top: 16px;
+	}
+
+
+
+
+}
+
+.site-footer__item {
+
+
+	&--1 {
+		width: 206px;
+
+		@media screen and (max-width: 1045px) {
+			width: calc(50% - 20px);
+			margin-left: 20px;
+		}
+
+		@media screen and (max-width: 620px) {
+			width: 100%;
+			margin-left: 0;
+
+			order: 1;
+		}
+	}
+
+	&--2 {
+		width: 380px;
+		max-width: calc(50% - 103px - 20px);
+		margin-left: 7%;
+
+		@media screen and (max-width: 1045px) {
+			max-width: calc(50% - 20px);
+			margin-left: 20px;
+		}
+
+		@media screen and (max-width: 620px) {
+			max-width: 100%;
+			margin-left: 0;
+			margin-top: 44px;
+			width: 100%;
+			order: 3;
+		}
+	}
+
+	&--3 {
+		width: 281px;
+		max-width: calc(50% - 103px - 20px);
+
+		@media screen and (max-width: 1045px) {
+			//max-width: calc(50% - 20px);
+			max-width: calc(100% - 20px);
+			width: 100%;
+
+			margin-left: 20px;
+			margin-top: 34px;
+		}
+
+		@media screen and (max-width: 620px) {
+			max-width: 100%;
+			margin-left: 0;
+
+			order: 2;
+		}
+	}
+
+	&-link {
+		font-family: Roboto;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 24px;
+		display: block;
+		margin-top: 20px;
+
+		@media screen and (max-width: 620px) {
+			display: none;
+			;
+		}
+
+		&--mt12 {
+			margin-top: 12px;
+		}
+
+	}
+}
+
+.footer-info {
+	margin-top: 20px;
+
+	@media screen and (max-width: 620px) {
+		//text-align: center;
+	}
+}
+
+.footer-socials {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+}
+
+.footer-social {
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
