@@ -1,0 +1,106 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Project title"
+
+block content
+	.container.container--breadcrumbs
+		ul.breadcrumbs
+			li.breadcrumbs__item 
+				a.breadcrumbs__link(href="")  Главная
+			.breadcrumbs__delimiter
+			li.breadcrumbs__item 
+				.breadcrumbs__link  Подать заявление на обслуживание
+	section.statement-about
+		.container
+			.statement-title Уважаемые граждане!
+			.statement-text Чтобы получать социальные услуги на дому Вам необходимо подать Заявление.Это можно сделать лично у нас в офисе: г. Ростов-на-Дону, ул. Королёва 7/19. Направив нам заполненную форму Заявления на электронную почту Организации — 
+					b 
+						a(href="mailto:anomiloserdie@bk.ru")  anomiloserdie@bk.ru
+					|  или заполнив электронную форму Заявление на сайте ниже:
+			a(href="").statement-link Заявление о предоставлении социальных услуг
+	section.manual
+		.container 
+			.statement-title.statement-title--mob-other Пошаговая инструкция <br> для просителя помощи
+			.manual-wrap
+				.box-manual
+					.type-manual-name Очная подача документов
+					.row-manual.js-calc-first-and-last-in-flex-row
+						.row-manual-item
+							.row-manual-item__img
+								img(src="img/svg/document-2.svg", alt="")
+							.row-manual-item__num 
+							.row-manual-item__name Получить консультацию по&nbsp;телефону
+						.row-manual-item
+							.row-manual-item__img
+								img(src="img/svg/document-2.svg", alt="")
+							.row-manual-item__num 
+							.row-manual-item__name Собрать необходимые документы 
+						.row-manual-item
+							.row-manual-item__img
+								img(src="img/svg/document-2.svg", alt="")
+							.row-manual-item__num
+							.row-manual-item__name Прийти в офис
+				.box-manual
+					.type-manual-name Варианты электронной подачи документов
+					.row-manual.row-manual--centred-text.js-calc-first-and-last-in-flex-row
+						.row-manual-item
+							.row-manual-item__img
+								img(src="img/svg/document-2.svg", alt="")
+							.row-manual-item__num 
+							.row-manual-item__name Заполнить заявление
+						.row-manual-item
+							.row-manual-item__img
+								img(src="img/svg/document-2.svg", alt="")
+							.row-manual-item__num 
+							.row-manual-item__name Отсканировать необходимые документы
+						.row-manual-item
+							.row-manual-item__img
+								img(src="img/svg/document-2.svg", alt="")
+							.row-manual-item__num
+							.row-manual-item__name Направить пакет документов на почту
+				.box-manual
+					.row-manual.row-manual--centred-text.js-calc-first-and-last-in-flex-row
+						.row-manual-item
+							.row-manual-item__img
+								img(src="img/svg/document-2.svg", alt="")
+							.row-manual-item__num 
+							.row-manual-item__name Ознакомиться с правилами
+						.row-manual-item
+							.row-manual-item__img
+								img(src="img/svg/document-2.svg", alt="")
+							.row-manual-item__num 
+							.row-manual-item__name Заполнить анкету
+						.row-manual-item
+							.row-manual-item__img
+								img(src="img/svg/document-2.svg", alt="")
+							.row-manual-item__num
+							.row-manual-item__name Загрузить документы
+						.row-manual-item
+							.row-manual-item__img
+								img(src="img/svg/document-2.svg", alt="")
+							.row-manual-item__num
+							.row-manual-item__name Ждать звонка координатора
+	section.help-asking
+		.container 
+			.help-asking-wrap
+				.help-asking-inner
+					.help-asking-img
+						img(src="img/help-asking.png", alt="")
+					.help-asking-text Также Вы можете оставить<br> прошение на получение гуманитарной, вещевой и иной помощи у нас в офисе в рабочее время.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

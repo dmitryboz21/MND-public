@@ -1,0 +1,16 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Project title"
+
+block content
+	.container.container--breadcrumbs
+		ul.breadcrumbs
+			li.breadcrumbs__item 
+				a.breadcrumbs__link(href="")  Главная
+			.breadcrumbs__delimiter
+			li.breadcrumbs__item 
+				.breadcrumbs__link  Как помочь
+
+	.simple-pre-footer

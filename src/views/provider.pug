@@ -1,0 +1,183 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Project title"
+
+block content
+	.container.container--breadcrumbs
+		ul.breadcrumbs
+			li.breadcrumbs__item 
+				a.breadcrumbs__link(href="")  Главная
+			.breadcrumbs__delimiter
+			li.breadcrumbs__item 
+				a.breadcrumbs__link(href="")  Прочее
+			.breadcrumbs__delimiter
+			li.breadcrumbs__item 
+				.breadcrumbs__link  Информация о поставщике соц услуг
+	.mob-provider-h1-wrap
+		.container
+			.mob-provider-h1  Информация о поставщике социальных услуг
+	section.section-text-on-bg(style="background-image:url(img/clouds.jpg);")
+		.container.container--973
+			.simple-text.simple-text--simple-dark-links.simple-text-tiltes.simple-text-tiltes--centred
+				h2.postavshik-desktop-title Информация о поставщике социальных услуг
+				p АНО СОБСПЗГ «Милосердие-на-Дону» является организацией социального обслуживания, осуществляющей социальное обслуживание граждан, признанных в установленном порядке нуждающимися в социальном обслуживании, в форме социального обслуживания на дому, а также социально-ориентированной некоммерческой организацией, оказывающей благотворительную помощь гражданам, попавшим в трудную жизненную ситуацию. Деятельность, подлежащую лицензированию в соответствии с законодательском Российской Федерации, не осуществляет.
+
+				p АНО СОБСПЗГ «Милосердие-на-Дону» с 17.05.2018 года включен в реестр поставщиков социальных услуг РО (номер 156)  
+					a(href="https://donland.ru") Деятельность / Министерство труда и социального развития Ростовской области (donland.ru)
+					| ; 11.03.2021 года Фондом президентских грантов и 13.04.2021 года министерство труда и социального развития Ростовской области включен в реестр социально ориентированных некоммерческих организаций, сформированный в соответствии с Постановлением Правительства Российской Федерации от 30 июля 2021 г. N 1290   
+					a(href="https://economy.gov.ru") Реестр социально ориентированных некоммерческих организаций, сформированный в соответствии с Постановлением Правительства Российской Федерации от 30 июля 2021 г. N 1290 (economy.gov.ru);
+					| <br>06 декабря 2022 года АНО СОБСПЗГ «Милосердие-на-Дону» прошла систему добровольной сертификации — свидетельство федерального стандарта проверки компаний СТО ФСПО-32704.04 , внесена в реестр проверки сведений о предприятиях   
+					a(href="https://reestr-fspc.su") Реестр — ФСПК (reestr-fspc.su)
+
+
+
+	section.section-contacts.section-contacts--provider
+		.container
+			.contacts-wrap
+				.contacts-info
+					.simple-text.contacts-info__positions Организация располагается по адресу: 344045, г. Ростов-на-Дону, ул. Королева 7/19, 
+					.contacts-info-items
+						.contacts-info-item
+							.contacts-info-item__img
+								img(src="img/svg/contacts-4.svg", alt="")
+							.contacts-info-item__text Время работы организации:  
+								b  с понедельника по пятницу с 9.00 до 18.00
+								| , перерыв на обед: 13.00 до 14.00
+						.contacts-info-item
+							.contacts-info-item__img
+								img(src="img/svg/contacts-1.svg", alt="")
+							.contacts-info-item__text Телефон:  
+								b
+									a(href="tel:+79085009697") +7 (908) 500-96-97
+						.contacts-info-item
+							.contacts-info-item__img
+								img(src="img/svg/contacts-2.svg", alt="")
+							.contacts-info-item__text Сайт:  
+								b
+									a(href="anomiloserdie.ru") anomiloserdie.ru
+						.contacts-info-item
+							.contacts-info-item__img
+								img(src="img/svg/contacts-3.svg", alt="")
+							.contacts-info-item__text Адрес электронной почты:  
+								b 
+									a(href="mailto:anomiloserdie@bk.ru") anomiloserdie@bk.ru
+					.contacts-info-adress
+						.contacts-info-adress__text Единственным учредителем Организации является гражданин РФ Евгений Иванович Осяк (Решение №1).
+				.map-wrap
+					.contacts-map
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c8cf4ed7dbec3de786dab5b8d56c3515da8c2f74e3a350ffb95c56f20ccb22d&amp;source=constructor" frameborder="0"></iframe>
+
+
+	section.section-head-and-deputies
+		.container
+			.had-title.tac Руководитель, его&nbsp;заместители:
+			.had-table-wrap
+				table.had-table
+					thead
+						tr
+							th Должность
+							th ФИО
+					tbody
+						tr
+							td Директор
+							td Евгений Иванович Осяк
+						tr
+							td Заместитель директора
+							td Дарья Михайловна Башлаева
+						tr
+							td Заведующий отделением
+							td Екатерина Ивановна Еремеевская
+						tr
+							td Главный бухгалтер
+							td Татьяна Васильевна Афанасьева
+
+	section.provider-page-simple-text 
+		.container
+			.simple-text
+				p Сотрудниками организации обслуживается 240 получателей социальных услуг на дому за счет бюджетных ассигнований бюджета Ростовской области – свободных мест нет. Получателей социальных услуг по формам социального обслуживания на дому за плату, частичную плату в соответствии с договорами о предоставлении социальных услуг за счет средств физических лиц и (или) юридических лиц нет.
+				p Подать заявление на обслуживание, встать в очередь на получение социальных услуг, получить иную информацию о деятельности Организации можно в рабочее время по телефону учреждения, лично в офисе, направив письмо на электронную почту.
+
+
+	section.section-simple-table 
+		.container
+			.simple-table-title.h2.h2--no-transform Объем предоставляемых социальных услуг за счет бюджетных ассигнований бюджетов субъектов Российской Федерации в 2021 году:
+		.container.container--right-endless-only-mob
+			.simple-table-wrap 
+				table.simple-table.simple-table--provider
+					thead
+						tr
+							th №п/п
+							th Наименование видов социальных услуг
+							th Общее количество социальных услуг из числавключенных в перечень социальных услуг субъекта Российской Федерации, оказываемых поставщиками социальных услуг (единиц)
+							th Общее количество установленных дополнительных(платных) социальных услуг в соответствии со статьей 11 Федерального закона от 28.12.2013 № 442-ФЗ (единиц)
+					tbody
+						tr
+							td 1
+							td 2
+							td 4
+							td 5
+						tr
+							td 1
+							td(style="text-align:left;") Социально-бытовые
+							td 16983
+							td 7130
+						tr
+							td 2
+							td(style="text-align:left;") Социально-медицинские
+							td 116
+							td 3100
+						tr
+							td 3
+							td(style="text-align:left;") Социально-психологические
+							td 12673
+							td 113
+						tr
+							td 4
+							td(style="text-align:left;") Социально-педагогические
+							td 0
+							td 0
+						tr
+							td 5
+							td(style="text-align:left;") Социально-трудовые
+							td 0
+							td 0
+						tr
+							td 6
+							td(style="text-align:left;") Социально-правовые
+							td 0
+							td 35
+						tr
+							td 7
+							td(style="text-align:left;") Услуги в целях повышения коммуникативного потенциала получателей социальных услуг
+							td 0
+							td 0
+						tr
+							td 8
+							td(style="text-align:left;") Срочные услуги
+							td 0
+							td 0
+						tr
+							td 
+							td(style="text-align:left;") Всего:
+							td 29772
+							td 13626
+
+
+	section.provider-links-list-section
+		.container
+			.provider-links-list__desc Предписаний органов, осуществляющих государственный контроль в сфере социального обслуживания, в Организации отсутствуют.
+			ul.simple-link-list
+				li
+					a(href="") Устав
+				li
+					a(href="") Свидетельство МИНЮСТ
+				li
+					a(href="") ИНН
+				li
+					a(href="") Правила ВТР
+
+
+
+	.simple-pre-footer

@@ -73,7 +73,11 @@ body {
 	height: 100%;
 }
 
-.h2 {
+.tac{
+	text-align: center;
+}
+
+.h2, .simple-text-tiltes h2 {
 	color: #40648A;
 	font-family: Roboto;
 	font-size: 32px;
@@ -87,6 +91,15 @@ body {
 	}
 }
 
+.simple-text-tiltes h2{
+	text-transform: none;
+}
+.h2--no-transform{
+text-transform: none;
+}
+.simple-text-tiltes--centred h2{
+	text-align: center;
+}
 .h2-big {
 	color: var(--blue-secondary, #006CAA);
 	font-family: $interFont;
@@ -96,7 +109,7 @@ body {
 	line-height: normal;
 	text-transform: uppercase;
 
-	@media screen and (max-width: 400px) {
+	@include max('md') {
 		color: #40648A;
 		font-family: Roboto;
 		font-size: 16px;
@@ -132,6 +145,9 @@ body {
 	max-width: 95%;
 	max-width: calc(100% - 30px * 2);
 	margin: 0 auto;
+	&--973{
+		width: 973px;
+	}
 
 	@media screen and (max-width: 1170px) {
 		max-width: calc(100% - 22px * 2);
@@ -230,7 +246,7 @@ html {
 				margin-right: 6px;
 			}
 
-			@media screen and (max-width: 760px) {
+			@media screen and (max-width: 1170px) {
 				width: 10px;
 				height: 10px;
 				border-radius: 10px;
@@ -240,7 +256,7 @@ html {
 				width: 36px;
 				background-color: rgba(7, 162, 240, 1);
 
-				@media screen and (max-width: 760px) {
+				@media screen and (max-width: 1170px) {
 					width: 10px;
 				}
 
@@ -602,7 +618,7 @@ html {
 		width: 72px;
 		height: 2px;
 
-		@media screen and (max-width: 475px) {
+		@include max('md') {
 			display: none;
 		}
 	}
@@ -611,7 +627,7 @@ html {
 .front-news {
 	margin-top: 119px;
 
-	@media screen and (max-width: 720px) {
+	@include max('md') {
 		border-radius: 12px;
 		background: #D8F0FC;
 		margin-left: 22px;
@@ -628,11 +644,8 @@ html {
 	display: flex;
 	margin-left: -31px;
 
-	@media screen and (max-width: 720px) {
+	@include max('md') {
 		margin-left: 0;
-	}
-
-	@media screen and (max-width: 475px) {
 		margin-top: 12px;
 	}
 
@@ -641,12 +654,9 @@ html {
 		width: calc(66.15% - 31px);
 		margin-left: 31px;
 
-		@media screen and (max-width: 720px) {
+		@include max('md') {
 			width: 100%;
 			margin-left: 0;
-		}
-
-		@media screen and (max-width: 380px) {
 			flex-direction: column;
 		}
 	}
@@ -660,7 +670,7 @@ html {
 			width: 100%;
 		}
 
-		@media screen and (max-width: 720px) {
+		@include max('md') {
 			display: none;
 		}
 	}
@@ -675,6 +685,11 @@ html {
 	@media screen and (max-width: 935px) {
 		margin-left: 0;
 	}
+	&--mob-no-pic{
+		@include max('md') {
+			margin-bottom: -24px;
+		}
+	}
 
 }
 
@@ -687,26 +702,12 @@ html {
 	display: block;
 
 	@include hov();
-	&:first-child {
-		.new-card__text {
-			@media screen and (max-width: 475px) {
-				margin-top: 0px;
-			}
-		}
-	}
-
+	
 	@media screen and (max-width: 935px) {
 		width: 100%;
 		margin-left: 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		
 	}
-
-	@media screen and (max-width: 475px) {
-		align-items: start;
-	}
-
 
 	&__img {
 		max-width: 100%;
@@ -715,10 +716,6 @@ html {
 
 		@media screen and (max-width: 935px) {
 			margin-top: 20px;
-		}
-
-		@media screen and (max-width: 475px) {
-			display: none;
 		}
 
 		&::before {
@@ -748,18 +745,36 @@ html {
 		line-height: 24px;
 		margin-top: 30px;
 
-		@media screen and (max-width: 380px) {
-			margin-top: 16px;
-		}
 
 	}
 
 	&__date {
 		margin-top: 24px;
 
-		@media screen and (max-width: 380px) {
+		@include max('md') {
 			margin-top: 8px;
 		}
+	}
+
+	&--mob-no-pic{
+		margin-bottom: 24px;
+		.new-card__img {
+			@include max('md') {
+				display: none;
+			}
+		}
+		.new-card__text {
+			@include max('md') {
+				margin-top: 0;
+			}
+		}
+
+		.new-card__date {
+			@include max('md') {
+				color: #888;
+			}
+		}
+
 	}
 }
 
@@ -774,7 +789,7 @@ html {
 	text-transform: uppercase;
 	margin-top: 12px;
 
-	@media screen and (max-width: 380px) {
+	@include max('md') {
 		display: block;
 	}
 }
@@ -835,12 +850,12 @@ html {
 		width: 33.54%;
 		height: 100%;
 
-		@media screen and (max-width: 380px) {
+		@include max('md') {
 			display: none;
 		}
 	}
 
-	@media screen and (max-width: 380px) {
+	@include max('md') {
 		background: #FFFF;
 		margin-top: 0;
 		padding-top: 31px;
@@ -898,8 +913,6 @@ html {
 			bottom: -23px;
 		}
 	}
-
-
 }
 
 .long-slider-slide {
@@ -918,7 +931,7 @@ html {
 		max-width: calc(var(--vw)*100 - 22px * 2);
 	}
 
-	@media screen and (max-width: 380px) {
+	@include max('md') {
 		margin-bottom: 7px;
 	}
 
@@ -947,7 +960,7 @@ html {
 		object-fit: cover;
 		object-position: center center;
 
-		@media screen and (max-width: 380px) {
+		@include max('md') {
 			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 		}
 

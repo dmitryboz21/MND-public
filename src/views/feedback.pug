@@ -1,0 +1,128 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Project title"
+
+block content
+	.container.container--breadcrumbs
+		ul.breadcrumbs
+			li.breadcrumbs__item 
+				a.breadcrumbs__link(href="")  Главная
+			.breadcrumbs__delimiter
+			li.breadcrumbs__item 
+				.breadcrumbs__link  Обратная связь
+	section.feedback
+		.container
+			form(action="").feedback-form
+				.feedback-form-title ОБРАТНАЯ СВЯЗЬ
+				.feedback-form-subtitle Уважаемые получатели социальных услуг!
+				.feedback-bold-text Вы можете оценить качество условий оказания социальных услуг АНО СОБСПЗГ «Милосердие-на-Дону», заполнив анонимно анкету ниже:
+				.feedback-form-items
+					.feedback-form-item
+						.feedback-form-item__question 1. В который раз Вы обратились в организацию социального обслуживания за получением социальных услуг? 
+						.feedback-form-item__answers
+							label.feedback-radio
+								input(type="radio" name="radio-1").feedback-input
+								.feedback-radio__pseudo
+								.feedback-radio__name впервые
+							label.feedback-radio
+								input(type="radio" name="radio-1").feedback-input
+								.feedback-radio__pseudo
+								.feedback-radio__name повторно
+					.feedback-form-item
+						.feedback-form-item__question 2. Как Вы оцениваете свою информированность о работе организации и порядке предоставления социальных услуг? 
+						.feedback-form-item__answers
+							label.feedback-radio
+								input(type="radio" name="radio-2").feedback-input
+								.feedback-radio__pseudo
+								.feedback-radio__name хорошо информирован(а)
+							label.feedback-radio
+								input(type="radio" name="radio-2").feedback-input
+								.feedback-radio__pseudo
+								.feedback-radio__name слабо информирован(а)
+							label.feedback-radio
+								input(type="radio" name="radio-2").feedback-input
+								.feedback-radio__pseudo
+								.feedback-radio__name не информирован(а)
+					.feedback-form-item
+						.feedback-form-item__question 3. Вы удовлетворены компетентностью персонала (профессиональной грамотностью) при предоставлении Вам услуг? Довольны ли Вы работой работников организации? *
+						.feedback-form-item__answers
+							label.feedback-radio
+								input(type="radio" name="radio-3").feedback-input
+								.feedback-radio__pseudo
+								.feedback-radio__name впервые
+							label.feedback-radio
+								input(type="radio" name="radio-3").feedback-input
+								.feedback-radio__pseudo
+								.feedback-radio__name повторно
+					.feedback-form-item
+						.feedback-form-item__question 4. Считаете ли Вы, что работники организации вежливы и доброжелательны?
+						.feedback-form-item__answers
+							label.feedback-radio
+								input(type="radio" name="radio-4").feedback-input
+								.feedback-radio__pseudo
+								.feedback-radio__name да
+							label.feedback-radio
+								input(type="radio" name="radio-4").feedback-input
+								.feedback-radio__pseudo
+								.feedback-radio__name нет
+					.feedback-form-item
+						.feedback-form-item__question 5. Как Вы оцениваете период ожидания получения услуг? 
+						.feedback-form-item__answers
+							label.feedback-radio
+								input(type="radio" name="radio-5").feedback-input
+								.feedback-radio__pseudo
+								.feedback-radio__name очередь на получение услуг отсутствует
+							label.feedback-radio
+								input(type="radio" name="radio-5").feedback-input
+								.feedback-radio__pseudo
+								.feedback-radio__name незначительный период пребывал(а) в очереди
+							label.feedback-radio
+								input(type="radio" name="radio-5").feedback-input
+								.feedback-radio__pseudo
+								.feedback-radio__name период ожидания в очереди длительный
+					.feedback-form-item
+						.feedback-form-item__question 6. Посоветуете ли Вы своим родственникам и знакомым обратиться в данную организацию за получением социальных услуг?
+						.feedback-form-item__answers
+							label.feedback-radio
+								input(type="radio" name="radio-6").feedback-input
+								.feedback-radio__pseudo
+								.feedback-radio__name да
+							label.feedback-radio
+								input(type="radio" name="radio-6").feedback-input
+								.feedback-radio__pseudo
+								.feedback-radio__name нет
+							label.feedback-radio
+								input(type="radio" name="radio-6").feedback-input
+								.feedback-radio__pseudo
+								.feedback-radio__name пока не знаю
+				.feedback-text-bot Получатели услуг могут высказать свое мнение о качестве условий их оказания, высказать замечания или пожелания, которые учитываются при планировании дальнейшей работы Организации.
+				.feedback-bold-text.feedback-bold-text--mt14 Ваши предложения, пожелания по улучшению качества предоставляемых социальных услуг:
+				textarea(name="", cols="30", rows="10" placeholder="Необязательно к заполнению").js-textarea-autosize.comment-textarea.comment-textarea--mob-mt-16
+				button.btn.btn--feedback Отправить комментарий
+	section.documents
+		.container
+			.documents-text Также мы можете скачать документы, заполнить и осканировать их.
+			.documents-links
+				a(href="").document-link
+					.document-link__img
+						img(src="img/svg/document-2.svg", alt="")
+					.document-link__name Анкета оценки качества услуг
+				a(href="").document-link
+					.document-link__img
+						img(src="img/svg/document-1.svg", alt="")
+					.document-link__name Порядок подачи жалоб
+
+
+
+
+
+
+
+
+
+
+
+
+

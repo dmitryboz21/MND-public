@@ -1,0 +1,60 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Project title"
+
+block content
+	.container.container--breadcrumbs
+		ul.breadcrumbs
+			li.breadcrumbs__item 
+				a.breadcrumbs__link(href="")  Главная
+			.breadcrumbs__delimiter
+			li.breadcrumbs__item 
+				a.breadcrumbs__link(href="")  Прочее
+			.breadcrumbs__delimiter
+			.breadcrumbs__item
+				.breadcrumbs__link  Финансово-хозяйственная деятельность
+	section.activity
+		.container
+			.activity-inner
+				.activity-title финансово-хозяйственная деятельность
+				.activity-box
+					.activity-box-col
+						.left-blue-block.activity-box__item.left-blue-block--box-shadow-none
+							a(href="").left-blue-block__link Свидетельство ФСПК до 06.12.25
+						.left-blue-block.activity-box__item.left-blue-block--box-shadow-none
+							a(href="").left-blue-block__link отчет о должной осмотрительности 29.11.22
+						.left-blue-block.activity-box__item.left-blue-block--box-shadow-none
+							a(href="").left-blue-block__link 2021 г. ОН0002
+						.left-blue-block.activity-box__item.left-blue-block--box-shadow-none
+							a(href="").left-blue-block__link 2021 г. ОН0002
+						.left-blue-block.activity-box__item.left-blue-block--box-shadow-none
+							a(href="").left-blue-block__link 2021 г. ОН0001
+					.activity-box-col
+						.left-blue-block.activity-box__item.left-blue-block--box-shadow-none
+							a(href="").left-blue-block__link 2021 г. ОН0002
+						.left-blue-block.activity-box__item.left-blue-block--box-shadow-none
+							a(href="").left-blue-block__link 2020 г. ОН0001
+						.left-blue-block.activity-box__item.left-blue-block--box-shadow-none
+							a(href="").left-blue-block__link 2019 г. ОН0001
+						.left-blue-block.activity-box__item.left-blue-block--box-shadow-none
+							a(href="").left-blue-block__link 2018 г. Сообщение о продолжении деятельности
+						.left-blue-block.activity-box__item.left-blue-block--box-shadow-none
+							a(href="").left-blue-block__link 2018 г. ОН0001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

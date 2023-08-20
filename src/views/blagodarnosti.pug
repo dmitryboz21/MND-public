@@ -1,0 +1,31 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Project title"
+
+block content
+	.container.container--breadcrumbs
+		ul.breadcrumbs
+			li.breadcrumbs__item 
+				a.breadcrumbs__link(href="")  Главная
+			.breadcrumbs__delimiter
+			li.breadcrumbs__item 
+				.breadcrumbs__link  Благодарность наших благополучателей
+
+	section.section-thanks
+		.container
+			.section-thanks-top 
+				.simple-text.section-thanks-top__text Очень важно знать, что твой труд приносит пользу обществу, повышает уровень качества жизни людей, снижает уровень социальной напряженности и просто дарит радостные улыбки. Нам не безразлично Ваше мнение. Коллектив АНО СОБСПЗГ «Милосердие-на-Дону» сердечно благодарит за высокую оценку своей работы, теплые слова благодарности!
+			.thanks-grid
+				each val in [1, 2, 3, 4, 5, 7, 8, 9]
+					a.thanks-grid-item(href="img/blagodarnost-full.jpg" data-fancybox="thanks" data-fancybox-customized ) 
+						.thanks-grid-item__pic
+							img(src="img/blagodarnost.jpg", alt="")
+						.thanks-grid-item__magnifier
+					a.thanks-grid-item(href="https://www.youtube.com/watch?v=9tqqtTULLa8" data-fancybox="thanks" data-fancybox-customized ) 
+						.thanks-grid-item__pic
+							img(src="img/blagodarnost.jpg", alt="")
+						.thanks-grid-item__magnifier
+
+	include partials/comments

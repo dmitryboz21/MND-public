@@ -1,0 +1,61 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Project title"
+
+block content
+	.container.container--breadcrumbs
+		ul.breadcrumbs
+			li.breadcrumbs__item 
+				a.breadcrumbs__link(href="")  Главная
+			.breadcrumbs__delimiter
+			li.breadcrumbs__item 
+				.breadcrumbs__link  Контакты
+	section.section-contacts
+		.container
+			.contacts-wrap
+				.contacts-info
+					.contacts-title Контакты
+					.simple-text.contacts-info__positions Директор: Евгений Иванович Осяк <br> Заместитель директора: Дарья Михайловна Башлаева <br> Заведующий ОСО: Екатерина Ивановна Еремеевская
+					.contacts-info-items
+						.contacts-info-item
+							.contacts-info-item__img
+								img(src="img/svg/contacts-1.svg", alt="")
+							.contacts-info-item__text Телефон:  
+								b
+									a(href="tel:+79085009697") +7 (908) 500-96-97
+						.contacts-info-item
+							.contacts-info-item__img
+								img(src="img/svg/contacts-2.svg", alt="")
+							.contacts-info-item__text Сайт:  
+								b
+									a(href="anomiloserdie.ru") anomiloserdie.ru
+						.contacts-info-item
+							.contacts-info-item__img
+								img(src="img/svg/contacts-3.svg", alt="")
+							.contacts-info-item__text Адрес электронной почты:  
+								b 
+									a(href="mailto:anomiloserdie@bk.ru") anomiloserdie@bk.ru
+					.contacts-info-adress
+						.contacts-info-adress__title Наш адрес
+						.contacts-info-adress__text Юридический адрес: 344113, Ростовская обл., Ростов-на-Дону г., Орбитальная ул., дом №1, корпус Б
+						.contacts-info-adress__text Фактический адрес: 344045, Ростовская обл., Ростов-на-Дону г., Королёва 7/19.
+				.map-wrap
+					.contacts-map
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c8cf4ed7dbec3de786dab5b8d56c3515da8c2f74e3a350ffb95c56f20ccb22d&amp;source=constructor" frameborder="0"></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

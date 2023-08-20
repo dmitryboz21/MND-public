@@ -1,0 +1,24 @@
+section.comment-box
+	.container
+		form(action="").comment-form
+			h3.comment-form__title Добавить комментарий
+			.comment-form__text Ваш адрес email не будет опубликован. Обязательные поля помечены *
+			.comment-form-fields
+				.comment-form-field
+					.comment-form-field__name Имя*
+					input(type="text").comment-form-field__input
+				.comment-form-field
+					.comment-form-field__name Email*
+					input(type="text").comment-form-field__input
+				.comment-form-field
+					.comment-form-field__name Сайт
+					input(type="text").comment-form-field__input
+			.comment-textarea-wrap
+				.comment-textarea-name Комментарий
+				textarea(name="", cols="30", rows="10").js-textarea-autosize.comment-textarea
+			.radio-wrap 
+				label.radio
+					input(type="checkbox").inp
+					.radio__pseudo
+					.radio__name Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих комментариев.
+			button.btn.btn--comment-form Отправить комментарий

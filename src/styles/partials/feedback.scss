@@ -1,0 +1,254 @@
+.feedback{
+	margin-top: 33px;
+	@include max('md'){
+		margin-top: 12px;
+	}
+}
+
+.feedback-form{
+	
+}
+.feedback-form-title{
+	color: var(--blue-secondary, #006CAA);
+	text-align: center;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	font-family: $interFont;
+	@include max('md'){
+		font-size: 16px;
+		line-height: 24px;
+		text-align: start;
+	}
+}
+.feedback-form-subtitle{
+	color: var(--blue-secondary, #006CAA);
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin-top: 39px;
+	@include max('md'){
+		font-size: 16px;
+		margin-top: 17px;
+	}
+}
+.feedback-bold-text{
+	margin-top: 12px;
+	color: #000;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	@include max('md'){
+		font-size: 16px;
+		font-weight: 400;
+		margin-top: 16px;
+		line-height: 147%;
+	}
+}
+.feedback-form-items{
+	margin-top: 45px;
+	@include max('md'){
+		margin-top: 49px;
+	}
+}
+.feedback-form-item{
+	&:not(:first-child){
+		margin-top: 24px;
+		@include max('md'){
+			margin-top: 25px;
+		}
+	}
+	&__question{
+		color: #000;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		@include max('md'){
+			font-size: 16px;
+			line-height: 154%;
+		}
+	}
+	&__answers{
+		margin-top: 11px;
+		@include max('md'){
+			margin-top: 13px;
+		}
+	}
+}
+.feedback-radio{
+	display: none;
+	cursor: pointer;
+	input{
+		display: none;
+		&:checked {
+			&~.feedback-radio {
+				&__pseudo {
+					transition-duration: .3s;
+					&::before {
+						opacity: 1;
+					}
+				}
+
+				&__name {}
+			}
+		}
+	}
+}
+.feedback-radio{
+	display: flex;
+	align-items: center;
+	&:not(:first-child){
+		margin-top: 9px;
+		@include max('md'){
+			margin-top: 13px;
+		}
+	}
+	cursor: pointer;
+	&__pseudo{
+		display: block;
+		min-width: 21px;
+		width: 21px;
+		height: 21px;
+		border: 2px solid #07A2F0;
+		border-radius: 50%;
+		background: #FFF;
+		position: relative;
+		margin-right: 15px;
+		margin-top: -1px;
+		transition-duration: .3s;
+		&::before {
+			content: '';
+			width: 8px;
+			height: 8px;
+			position: absolute;
+			display: block;
+			border-radius: 50%;
+			transition-duration: .3s;
+			opacity: 0;
+			left: 5px;
+			top: 5px;
+			background: #07A2F0;
+	
+		}
+	}
+	
+	&__name{
+		color: #000;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		@include max('md'){
+			font-size: 16px;
+		}
+		
+	}
+}
+.feedback-text-bot{
+	margin-top: 61px;
+	color: #000;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	@include max('md'){
+		font-size: 16px;
+		line-height: 148%;
+		margin-top: 67px;
+	}
+}
+
+.comment-textarea--mob-mt-16{
+	@include max('md'){
+		margin-top: 16px;
+	}
+}
+.btn--feedback{
+	max-width: 380px;
+	margin-top: 19px;
+}
+.documents{
+	margin-top: 136px;
+	margin-bottom: 136px;
+	@include max('md'){
+		margin-top: 31px;
+		margin-bottom: 22px;
+	}
+}
+.documents-text{
+	color: #000;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	@include max('md'){
+		font-size: 16px;
+		line-height: 141%;
+	}
+}
+.documents-links{
+	margin-top: 24px;
+	display: flex;
+	margin-left: -24px;
+	flex-wrap: wrap;
+	@include max('md'){
+		margin-left: 0;
+		margin-top: 37px;
+	}
+}
+.document-link{
+	margin-left: 24px;
+	width: 182px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 24px;
+	@include max('md'){
+		margin-left: 0px;
+	}
+	&__img{	
+		border-radius: 100px;
+		width: 80px;
+		height: 80px;
+		background: var(--blue-main, #07A2F0);
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include max('md') {
+			
+		}
+		
+		img{
+			max-width: 100%;max-height: 100%;
+			object-fit: contain;
+			object-position: center center;
+			@include max('md') {
+				
+			}
+		}
+	}
+	&__name{
+		color: var(--blue-main, #07A2F0);
+		text-align: center;
+		font-family: Roboto;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		text-decoration-line: underline;
+		margin-top: 23px;
+		@include max('md') {
+			
+		}
+	}
+
+}
+
+
+
+
