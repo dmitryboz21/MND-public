@@ -1,0 +1,101 @@
+.faq{
+	margin-top: 17px;
+	@include max('md'){
+		margin-top: 13px;
+	}
+}
+.faq-title{
+	color: var(--blue-secondary, #006CAA);
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+	@include max('md'){
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+.faq-items{
+	margin-top: 32px;
+	margin-bottom: -24px;
+	@include max('md'){
+		margin-top: 19px;
+		margin-bottom: -23px;
+	}
+}
+.faq-item{
+	margin-bottom: 24px;
+	border-radius: 12px;
+	border-left: 8px solid var(--blue-main, #07A2F0);
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+	background: #FFF;
+	padding: 24px 21px 24px 21px;
+	@include max('md'){
+		padding: 25px 18px 24px 23px;
+		margin-bottom: 23px;
+	}
+	&__head{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		cursor: pointer;
+		
+	}
+	&__head-name{
+		color: #000;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		@include max('md'){
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+	&__head-button{
+		min-width: 30px;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		transition: all .3s;
+		background: url(../img/svg/arrow-up.svg) no-repeat center center;
+		background-size: contain;
+		display: block;
+		margin-left: 20px;
+		@include max('md'){
+			margin-left: 16px;
+		}
+
+	}
+	&__body{
+		background: #FFF;
+		margin-top: 14px;
+		@include max('md'){
+			margin-top: 10px;
+			padding-right: 17px;
+			padding-bottom: 21px;
+		}
+		
+		
+	}
+	&__body-text{
+		color: #000;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 26px;
+		@include max('md'){
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+}
+.faq-item__head--active{
+	.faq-item__head-button{
+		transform: rotate(180deg);
+	}
+}
+
+
+
